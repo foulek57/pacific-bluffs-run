@@ -8,7 +8,7 @@ local countdownTimer = 0
 
 
 Citizen.CreateThread(function()
-    -- Désactivation du blip
+    -- Dï¿½sactivation du blip
     --for _, location in ipairs(Config.refillLocations) do
     --    local blip = AddBlipForCoord(location.x, location.y, location.z)
     --    SetBlipSprite(blip, 365)
@@ -112,6 +112,8 @@ function StartFilling()
     end
 end
 
+
+
 function FinishFilling()
     isFilling = false
     isFilled = true
@@ -163,6 +165,8 @@ function FinishDrain()
     SetVehicleEngineOn(tanker, true, true, true) -- Turn on the engine
 
     ShowNotification("~g~Tanker Drained!")
+    
+    TriggerServerEvent('juanito:finish') -- Appel de l'event pour gagner l'argent
 end
 
 function ResetTankerProperties()

@@ -10,10 +10,13 @@ Config = {
     },
     -- Remplissage
     refillLocations = {
-        { x = 1240.08, y = -1479.96, z = 34.76 }, -- A coté de la caserne de pompiers
+        { x = 1240.08, y = -1479.96, z = 34.76 }, -- A cotï¿½ de la caserne de pompiers
     },
     -- Livraison
     deliveryLocations = {
-        { x = 959.43, y = -1416.38, z = 31.30 } -- A définir une fois le mapping mis
-    }
+        { x = 959.43, y = -1416.38, z = 31.30 } -- A dï¿½finir une fois le mapping mis
+    },
+
+    GainsJob = { min = 50, max = 150 }, -- Gains de la sociÃ©tÃ©
+    PlayerGains = { min = 450, max = 650 } -- Gains du joueur
 }
